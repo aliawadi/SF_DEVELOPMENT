@@ -1,0 +1,71 @@
+{
+    "compilerOptions": {
+        "experimentalDecorators": true,
+        "baseUrl": ".",
+        "paths": {
+            "c/mainComponent": [
+                "mainComponent/mainComponent.js"
+            ],
+            "c/accountList": [
+                "accountList/accountList.js"
+            ],
+            "c/accountMap": [
+                "accountMap/accountMap.js"
+            ],
+            "c/errorPanel": [
+                "errorPanel/errorPanel.js"
+            ],
+            "c/contactList": [
+                "contactList/contactList.js"
+            ],
+            "c/ldsUtils": [
+                "ldsUtils/ldsUtils.js"
+            ],
+            "c/calculatorComp": [
+                "calculatorComp/calculatorComp.js"
+            ],
+            "c/calculator": [
+                "calculator/calculator.js"
+            ],
+            "c/lifeCycleHookExample": [
+                "lifeCycleHookExample/lifeCycleHookExample.js"
+            ],
+            "c/LifeCycleHookExample": [
+                "LifeCycleHookExample/LifeCycleHookExample.js"
+            ],
+            "c/childComponent": [
+                "childComponent/childComponent.js"
+            ],
+            "c/parentComp": [
+                "parentComp/parentComp.js"
+            ],
+            "c/paginator": [
+                "paginator/paginator.js"
+            ],
+            "c/customEventHandler": [
+                "customEventHandler/customEventHandler.js"
+            ],
+            "c/bubbleChild": [
+                "bubbleChild/bubbleChild.js"
+            ],
+            "c/bubbleParent": [
+                "bubbleParent/bubbleParent.js"
+            ],
+            "c/lwcUsedInAura": [
+                "lwcUsedInAura/lwcUsedInAura.js"
+            ],
+            "c/ldsRecordFormExample": [
+                "ldsRecordFormExample/ldsRecordFormExample.js"
+            ]
+        }
+    },
+    "include": [
+        "**/*",
+        "../../../../.sfdx/typings/lwc/**/*.d.ts"
+    ],
+    "typeAcquisition": {
+        "include": [
+            "jest"
+        ]
+    }
+}

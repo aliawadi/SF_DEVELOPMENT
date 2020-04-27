@@ -1,0 +1,11 @@
+<template>
+    <div class="slds-m-around_large">
+        <lightning-card label="Display Page Numer" icon-name="custom:custom11"></lightning-card>
+   
+            <p class="slds-m-vertical_medium content">Page {page}</p>
+   
+        <c-paginator onprevious={handlePrevious}
+        onnext={handleNext}
+        ondisplay={handleDisplay}  pageno="page"></c-paginator>
+    </div>
+</template>

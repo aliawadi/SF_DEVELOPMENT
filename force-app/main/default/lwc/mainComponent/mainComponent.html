@@ -1,0 +1,22 @@
+<template>
+  <lightning-card title="Composite Component" icon-name="custom:custom57">
+    <div class="slds-m-around-medium">
+      <lightning-input 
+       label="Search the Contact"
+        type="search" 
+        onchange={handleSearchEvent}
+        class="slds-m-bottom_small">
+      </lightning-input>
+      <template if:true={contacts}>
+        <template for:each={contacts} for:item="contact">
+          <c-contact-list key={contact.Id} contact={contact}></c-contact-list>
+        </template>
+      </template>
+    </div>
+    <template if:true={error}>
+      <c-error-panel errors={error}></c-error-panel>
+    </template>
+  </lightning-card>
+</template>
+
+</template>

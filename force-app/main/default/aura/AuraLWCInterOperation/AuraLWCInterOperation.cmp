@@ -1,0 +1,31 @@
+<aura:component>
+    <aura:attribute name="message" type="String" default="No selection"/>
+    <aura:attribute name="message2" type="String" default="No selection"/>
+
+    <lightning:card title="AuraDomEventListener" iconName="custom:custom30">
+        <aura:set attribute="actions">
+            <span class="aura">Aura Component</span>
+        </aura:set>
+        <div class="slds-m-around_medium">
+            <lightning:layout>
+                <lightning:layoutItem size="4">
+                    <!-- This is an LWC component -->
+                    <c:lwcUsedInAura onlwcevent="{!c.handleLWCEvent}"
+                    aura:id="lwcComp"/>
+                </lightning:layoutItem>
+                <lightning:layoutItem size="8" class="slds-p-left_medium">
+                    {!v.message}
+                </lightning:layoutItem>
+            </lightning:layout>
+        </div>
+
+        <div>
+            <lightning:button label="Call LWC Method"  variant="brand" 
+            onclick="{!c.callLWCMethod}"/>
+            <br/>
+            <lightning:layoutItem size="8" class="slds-p-left_medium">
+                {!v.message2}
+            </lightning:layoutItem>
+        </div>
+    </lightning:card>
+</aura:component>	

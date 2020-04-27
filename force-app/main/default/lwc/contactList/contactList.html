@@ -1,0 +1,23 @@
+<template>
+    <template if:true={contact}>
+        <lightning-layout vertical-align="center">
+            <lightning-layout-item padding="around-small">
+                <p>{contact.Name}</p> 
+                <lightning-button
+                label="View Contact"
+                onclick={navigateToContact1}
+            ></lightning-button>
+                <p>{contact.Title}</p>
+                <p>
+                    <lightning-formatted-phone value={contact.Phone}></lightning-formatted-phone>
+                </p>
+            </lightning-layout-item>
+       
+        </lightning-layout>
+    </template>
+    <template if:false={contact}>
+        <p>
+            No Result for the search Contact
+        </p>
+    </template>
+</template>
